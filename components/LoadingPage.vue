@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-full flex items-center justify-center">
     <h2 class="animate">
-      <img src="/images/loading.webp" class="w-40">
+      <img src="/images/vectorstock_45969943.svg" class="w-40">
     </h2>
   </div>
 </template>

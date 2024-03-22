@@ -14,9 +14,7 @@ onBeforeMount(() => {
 })
 
 onMounted(() => {
-  setTimeout(() => {
-    loadingPage.value = true
-  }, 1000)
+  loadingPage.value = true  
 })
 </script>
 
