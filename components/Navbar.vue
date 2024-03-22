@@ -12,8 +12,8 @@
         </a>
       </li>
       <li class="navbar-item">
-        <a href="#github" class="navbar-link" :class="{ 'active': activeSection === 'github' }">
-          {{ $t('pageTitles.projects') }}
+        <a href="#publication" class="navbar-link" :class="{ 'active': activeSection === 'publication' }">
+          Publications
         </a>
       </li>
     </ul>
@@ -30,7 +30,7 @@ const handleScroll = () => {
   // Verificar la posición del scroll en relación con cada sección de la página
   const aboutSection = document.getElementById('about');
   const resumeSection = document.getElementById('resume');
-  const githubSection = document.getElementById('github');
+  const githubSection = document.getElementById('publication');
 
   const scrollY = window.scrollY;
   const scrollTop = window.scrollY;
@@ -53,7 +53,7 @@ const handleScroll = () => {
   } else if (
     scrollY >= resumeSection.offsetTop
   ) {
-    activeSection.value = 'github';
+    activeSection.value = 'publication';
   }
 
   // Actualizar el estado de la variable isScrolled

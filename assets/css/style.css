@@ -347,6 +347,9 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 40px;
 }
+.avatar-box img {
+  border-radius: 40px;
+}
 .info-content {
   width: 100%;
 }
@@ -606,6 +609,7 @@ main {
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 25px;
   width: 100%;
+  overflow: visible;
 }
 
 .tech-tooltip p {
@@ -642,13 +646,13 @@ main {
   scroll-snap-align: start;
 }
 
-.techs-item img {
+.techs-item img, svg {
     width: 4rem;
     filter: opacity(0.5);
     transition: var(--transition-1);
 }
 
-.techs-item img:hover { filter: grayscale(0); }
+.techs-item img:hover, svg:hover { filter: grayscale(0); }
 
 
 
@@ -781,6 +785,16 @@ justify-content: space-between;
 
 .timeline-item-content-body {
   margin-top: 1rem; /* Espacio entre el contenido y la descripción */
+}
+
+.timeline-description-li {
+  list-style-type: circle;
+  list-style-position: inside;
+  color: var(--color-text-light);
+}
+
+.timeline-description-li .highlight {
+  color: var(--color-text-light)
 }
 
 .timeline-description {
@@ -1431,6 +1445,15 @@ textarea.contact::-webkit-resizer { display: none; }
     height: 336px;
   } */
 
+  .grid-techs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 0 -15px;
+    padding: 25px;
+    overflow: visible;
+  }
 
 }
 
@@ -1464,7 +1487,15 @@ textarea.contact::-webkit-resizer { display: none; }
 
   }
 
-
+  .grid-techs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 0 -15px;
+    padding: 25px;
+    overflow: visible;
+  }
 
   /**
    * #REUSED STYLE
@@ -1520,7 +1551,7 @@ textarea.contact::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 120px; border-radius: 30px; }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1583,6 +1614,7 @@ textarea.contact::-webkit-resizer { display: none; }
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+  text-align: justify;
 }
 
   /* service */
@@ -1709,6 +1741,7 @@ textarea.contact::-webkit-resizer { display: none; }
     justify-items: center;
     margin: 0 -15px;
     padding: 25px;
+    overflow: visible;
   }
   .tech-tooltip p {
     position: absolute;
@@ -2014,6 +2047,7 @@ textarea.contact::-webkit-resizer { display: none; }
     margin-bottom: 0;
     padding-top: 60px;
     z-index: 1;
+    min-height: 39rem;
   }
 
   .sidebar-info { flex-direction: column; }

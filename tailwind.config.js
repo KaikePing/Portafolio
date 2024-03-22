@@ -12,6 +12,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xl': '1250px',
+      },
       colors: {
         ranko: {
           50: '#FCE5C1',

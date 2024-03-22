@@ -6,16 +6,16 @@ useHead({
   htmlAttrs: {
     lang: locale,
   },
-  titleTemplate: 'David Alvarez Perales',
+  titleTemplate: 'Kaike Ping',
   meta: [
       { charset: 'utf-8' },
-      { name: 'description', content: 'Personal site about David Alvarez Perales.' },
+      { name: 'description', content: 'Personal site about Kaike Ping.' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
   link: [
-    {
-      rel: 'icon', type: 'image/png', href: '../images/icon/favicon-32x32.png',
-    },
+    // {
+    //   rel: 'icon', type: 'image/png', href: '../images/icon/favicon-32x32.png',
+    // },
     {
       rel: 'preconnect',
       href: 'https://fonts.googleapis.com',

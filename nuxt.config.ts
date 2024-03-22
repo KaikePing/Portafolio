@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     // 'primevue/resources/primevue.css',
     // 'primeicons/primeicons.css',
     '/assets/css/style.css',
+    '/assets/css/pubcard.scss',
   ],
   build: {
     transpile: ['primevue', 'pinia-orm'],

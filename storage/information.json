@@ -1,0 +1,162 @@
+{
+    "bio": {
+        "name": "Kaike Ping",
+        "pfp": "/images/avatar.png",
+        "title": [
+            "PhD Candidate",
+            "Computer Science",
+            "Virginia Tech"
+        ],
+        "email": "pkk@vt.edu",
+        "linkedin": "https://www.linkedin.com/in/kaike-ping/",
+        "github": "https://github.com/kaikeping"
+    },
+    "about": {
+        "content": "I am a PhD candidate in *Computer Science* at *Virginia Tech* since August 2022, advised by Prof. Eugenia Rho. I received my Master's degree in *Biostatistics* from Southern Medical University in Guangzhou, China in 2017, advised by Prof. Pingyan Chen. I am broadly interested in *natural language processing (NLP)* and *computational social science*, with a focus on *human-computer interaction (HCI)* in developing and evaluating an interactive AI system to assist people. I have also conducted research on epidemiology and public health, including pandemic surveillance, risk assessment, transmission modeling, and field investigations.",
+        "techs": [
+            {
+                "name": "R",
+                "icon": "skill-icons:r-dark",
+                "description": "10+ years of experience"
+            },
+            {
+                "name": "Python",
+                "icon": "skill-icons:python-dark",
+                "description": "10+ years of experience"
+            },
+            {
+                "name": "PyTorch",
+                "icon": "skill-icons:pytorch-dark",
+                "description": "3+ years of experience"
+            },
+            {
+                "name": "HuggingFace",
+                "icon": "fluent-emoji-flat:hugging-face",
+                "description": "2+ years of experience"
+            },
+            {
+                "name": "SQL",
+                "icon": "skill-icons:mysql-dark",
+                "description": "5+ years of experience"
+            },
+            {
+                "name": "PHP",
+                "icon": "skill-icons:php-dark",
+                "description": "The best programming language in the world!"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "skill-icons:javascript",
+                "description": "5+ years of experience"
+            },
+            {
+                "name": "Vue",
+                "icon": "skill-icons:vuejs-dark",
+                "description": "1+ year of experience"
+            }
+        ]
+    },
+    "experience": [
+        {
+            "title": "Assistant Research Fellow",
+            "date": "Nov 2019 ➔ Jul 2022",
+            "company": "Guizhou Center for Disease Control and Prevention",
+            "description": [
+                "*Epidemic Surveillance*: Collected and analyzed weekly epidemic surveillance data on COVID-19, unexplained pneumonia, and avian influenza for over 3.8 million people to monitor their intensity, detect transmission changes, and measure their impacts on hospitalizations and deaths",
+                "*Pandemic Risk Assessment*: Assessed the risks of possible pandemic outbreaks using data-driven models and scenarios and determined the appropriate public health response level and steps for different regions and populations",
+                "*Field Epidemiology*: Conducted field epidemiological investigations on over 100 cases of COVID-19, flu, avian influenza, and chickenpox to trace and test over 1000 contacts and control transmissions",
+                "*Epidemic Modeling*: Analyzed epidemiologic characteristics of various epidemics using statistical or computer simulation models to unravel transmission dynamics and evaluate intervention strategies",
+                "*Health Education*: Hosted over 5 health education and assessment workshops and activities on COVID-19 prevention for various groups and settings"
+            ],
+            "technologies": [
+                "Data collection",
+                "Data Analysis",
+                "Modeling",
+                "Simulation",
+                "Visualization",
+                "Decision Making"
+            ],
+            "icon": "earth-outline"
+        },
+        {
+            "title": "Software Engineer",
+            "date": "Jul 2017 ➔ Jun 2019",
+            "company": "Contract Research Organization of CLT Inc",
+            "description": [
+                "*Web Development*: Served as the chief programmer for the Central Randomization System and Electronic Data Capture System using web development technologies such as HTML, CSS, JavaScript, PHP, and MySQL",
+                "*Central Randomization System*: Developed the Central Randomization System, a web-based application used in over 20 multi-center clinical trials, to implement drug management, user management, and algorithms for allocation concealment",
+                "*Electronic Data Capture System*: Created the Electronic Data Capture System, a web-based SaaS that stored patient data collected in clinical trials, to increase real-time access to data and decrease time spent on query management"
+            ],
+            "technologies": [
+                "Web Development",
+                "Software Testing",
+                "Database Management"
+            ],
+            "icon": "business-outline"
+        },
+        {
+            "title": "Research Intern",
+            "date": "Nov 2015 ➔ Feb 2017",
+            "company": "National Clinical Research Center for Kidney Disease",
+            "description": [
+                "*Cohort Study Development*: Deployed a web-based application for a cohort study of chronic kidney disease patients",
+                "*Case Report Form Design*: Participated in the design of case report forms for data collection and management for the cohort study"
+            ],
+            "technologies": [
+                "Cohort Study",
+                "Study Design",
+                "Statistics Analysis"
+            ],
+            "icon": "medkit-outline"
+        }
+    ],
+    "education": [
+        {
+            "title": "PhD Candidate in Computer Science",
+            "date": "Aug 2022 ➔ Present",
+            "university": "Virginia Tech"
+        },
+        {
+            "title": "Master of Medicine in Biostatistics",
+            "date": "Sep 2014 ➔ Jul 2017",
+            "university": "Southern Medical University"
+        },
+        {
+            "title": "Bachelor of Science in Applied Statistics",
+            "date": "Sep 2010 ➔ Jul 2014",
+            "university": "Southern Medical University"
+        }
+    ],
+    "publication": [
+        {
+            "title": "Epidemiologic Characteristics of COVID-19 in Guizhou Province, China",
+            "venue": "The Journal of Infection in Developing Countries",
+            "authors": "Kaike Ping, Mingyu Lei, Yun Gou, Zhongfa Tao, Guanghai Yao, Can Hu, Qin Tao, Zhiting Zou, Dingming Wang, Shijun Li, and Yan Huang",
+            "pic": "/images/pub/mscanojidc-015-0389.jpg"
+        },
+        {
+            "title": "A New Preprocedure Risk Score for Predicting Contrast-Induced Acute Kidney Injury",
+            "venue": "Canadian Journal of Cardiology",
+            "authors": "Chongyang Duan, Yingshu Cao, Yong Liu, Lizhi Zhou, Kaike Ping, Ming T. Tan, Ning Tan, Jiyan Chen, and Pingyan Chen",
+            "pic": "/images/pub/S0828282X17300302.jpg"
+        },
+        {
+            "title": "Initial Clinical Characteristics of 146 Patients with COVID-19 Reported in Guizhou Province, China: A Survival Analysis",
+            "venue": "The Journal of Infection in Developing Countries",
+            "authors": "Yun Gou, Ping, Kaike, Mingyu Lei, Chun Yu, Ying Tao, Can Hu, Zhongfa Tao, Zhiting Zou, Weijia Jiang, Shijun Li, Li Zhuang, Zhaobin Liu, and Yan Huang",
+            "pic": "/images/pub/mscanojidc-016-0032.jpg"
+        },
+        {
+            "title": "Crowdsourcing assessment of maternal blood multi-omics for predicting gestational age and preterm birth",
+            "venue": "Cell Reports Medicine",
+            "authors": "Adi L. Tarca, Bálint Ármin Pataki, Roberto Romero, The DREAM Preterm Birth Prediction Challenge Consortium (including Kaike Ping), etc.",
+            "pic": "/images/pub/PIIS266637912100166X.jpg"
+        },
+        {
+            "title": "Cervical Rotatory Manipulation Decreases Uniaxial Tensile Properties of Rabbit Atherosclerotic Internal Carotid Artery",
+            "venue": "Evidence-Based Complementary and Alternative Medicine",
+            "authors": "Shaoqun Zhang, Ji Qi, Lei Zhang, Chao Chen, Shubhro Mondal, Kaike Ping, Yili Chen, and Yikai Li",
+            "pic": "/images/pub/5189356.fig.004a.png"
+        }
+    ]
+}

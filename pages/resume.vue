@@ -9,34 +9,73 @@
     <section class="timeline">
       <div class="title-wrapper">
         <div class="icon-box">
-          <ion-icon name="business-outline"></ion-icon>
+          <ion-icon name="book-outline"></ion-icon>
         </div>
-        <h3 class="h3">Experience</h3>
+
+        <h3 class="h3">Education</h3>
       </div>
       <ol class="timeline-list">
-        <li class="timeline-item" v-for="job in experience" :key="job.title">
+        <li class="timeline-item" v-for="job in info.education" :key="job.title">
           <div class="timeline-item-content">
             <!-- Item Header -->
             <div class="timeline-item-content-header">
               <!-- Title + Institution Flex Column -->
               <div class="flex-column-title">
-                  <h4 class="timeline-item-title fw-bold">{{ job.title }}</h4>
-                  <h6 class="timeline-item-subtitle text-light-6 text-3">
-                    <ion-icon class="timeline-icon" name="business-outline"></ion-icon>
-                      <span>{{ job.company }}</span>
-                  </h6>
+                <h4 class="timeline-item-title fw-bold">{{ job.title }}</h4>
+                <h6 class="timeline-item-subtitle text-light-6 text-3">
+                  <ion-icon class="timeline-icon" name="ribbon-outline"></ion-icon>
+                  <span>{{ job.university }}</span>
+                </h6>
               </div>
 
               <div class="flex-column-date">
-                  <!-- Date Tags -->
-                  <div class="tag">
-                    <ion-icon class="timeline-icon" name="calendar-outline"></ion-icon>
-                    <span>{{ job.date}}</span>
-                  </div>
+                <!-- Date Tags -->
+                <div class="tag">
+                  <ion-icon class="timeline-icon" name="calendar-outline"></ion-icon>
+                  <span>{{ job.date }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+    </section>
+
+    <section class="timeline">
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="business-outline"></ion-icon>
+        </div>
+        <h3 class="h3">Experience</h3>
+      </div>
+      <ol class="timeline-list">
+        <li class="timeline-item" v-for="job in info.experience" :key="job.title">
+          <div class="timeline-item-content">
+            <!-- Item Header -->
+            <div class="timeline-item-content-header">
+              <!-- Title + Institution Flex Column -->
+              <div class="flex-column-title">
+                <h4 class="timeline-item-title fw-bold">{{ job.title }}</h4>
+                <h6 class="timeline-item-subtitle text-light-6 text-3">
+                  <ion-icon class="timeline-icon" :name="job.icon"></ion-icon>
+                  <span>{{ job.company }}</span>
+                </h6>
+              </div>
+
+              <div class="flex-column-date">
+                <!-- Date Tags -->
+                <div class="tag">
+                  <ion-icon class="timeline-icon" name="calendar-outline"></ion-icon>
+                  <span>{{ job.date }}</span>
+                </div>
               </div>
             </div>
             <div class="timeline-item-content-body mt-2">
-              <p class="text-3 timeline-description">{{ job.description }}</p>
+              <ul>
+                <li v-for="item in job.description" class="text-3 timeline-description timeline-description-li"
+                  v-html="highlightText(item)" />
+              </ul>
             </div>
           </div>
 
@@ -48,47 +87,9 @@
           </ul>
         </li>
       </ol>
-    </section>
-
-    <section class="timeline">
-      <div class="title-wrapper">
-        <div class="icon-box">
-          <ion-icon name="book-outline"></ion-icon>
-        </div>
-
-        <h3 class="h3">Education</h3>
-      </div>
-      <ol class="timeline-list">
-        <li class="timeline-item" v-for="job in education" :key="job.title">
-          <div class="timeline-item-content">
-            <!-- Item Header -->
-            <div class="timeline-item-content-header">
-              <!-- Title + Institution Flex Column -->
-              <div class="flex-column-title">
-                  <h4 class="timeline-item-title fw-bold">{{ job.title }}</h4>
-                  <h6 class="timeline-item-subtitle text-light-6 text-3">
-                    <ion-icon class="timeline-icon" name="business-outline"></ion-icon>
-                      <span>{{ job.university }}</span>
-                  </h6>
-              </div>
-
-              <div class="flex-column-date">
-                  <!-- Date Tags -->
-                  <div class="tag">
-                    <ion-icon class="timeline-icon" name="calendar-outline"></ion-icon>
-                    <span>{{ job.date}}</span>
-                  </div>
-              </div>
-            </div>
-          </div>  
-        </li>
-      </ol>
+      <br>
       <div class="download-button-container">
-        <a
-          href="/Files/DavidAlvarezPerales-CV.pdf"
-          aria-label="Download Resume"
-          class="cta"
-        >
+        <a href="/Files/Kaike_Ping_Resume.pdf" aria-label="Download Resume" class="cta">
           <span>Download Full Resume</span>
           <svg width="13px" height="10px" viewBox="0 0 13 10">
             <path d="M1,5 L11,5"></path>
@@ -101,48 +102,7 @@
 </template>
 
 <script setup>
-const experience = [
-  {
-    title: 'Software Engineer',
-    date: 'Dec 2022 ➔ Currently',
-    company: 'Dars Telecom',
-    description:'Translated business needs to solutions, collaborated on Java projects, led innovation, and improved software efficiency with Python.',
-    technologies: ['Python', 'Java', 'JPA', 'CI/CD', 'Bash', 'Linux/Unix','VMWare', 'Oracle'],
-  },
-  {
-    title: 'Full Stack Developer (VueJS/NodeJS)',
-    date: 'Jan 2023 ➔ Currently',
-    company: 'UC3M University',
-    description: 'Developing SurgeryAI-Models project with VueJS and Node.js. Led requirement gathering, specifications, and mockup design for efficient development.',
-    technologies: ['VueJS', 'NodeJS', 'ExpressJS', 'ArangoDB', 'Docker'],
-  },
-  {
-    title: 'Project Management Officer',
-    date: 'Jun 2022 ➔ Sep 2022',
-    company: 'Accenture',
-    description: 'Oversaw project tasks, engaged stakeholders, and identified risks in control meetings',
-    technologies: ['Excel', 'PowertPoint', 'Power BI'],
-  },
-  {
-    title: 'Full Stack Developer (VueJS/ExpressJS)',
-    date: 'Jun 2021 ➔ Jun 2022',
-    company: 'Automoviles Aerolan',
-    description: 'Designed website with NodeJS, VueJS, and ArangoDB, creating a secure and scalable system architecture for web applications.',
-    technologies: ['VueJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
-  },
-] 
-const education = [
-  {
-    title: 'Dual Bachelor of Computer Engineering and Business Administration',
-    date: 'Sep 2018 ➔ Jun 2023',
-    university: 'UC3M University'
-  },
-  {
-    title: 'Master in Agile Organizations and Digital Transformation',
-    date: 'Sep 2022 ➔ Sep 2023',
-    university: 'Camilo José Cela University'
-  }
-]
+
 </script>
 
 <style scoped>
@@ -171,7 +131,7 @@ a {
   left: 0;
   display: block;
   border-radius: 28px;
-  background: rgba(45,212,191,.1);
+  background: rgba(45, 212, 191, .1);
   width: 46px;
   height: 46px;
   transition: all 0.3s ease;
@@ -204,7 +164,7 @@ a {
 
 .cta:hover:before {
   width: 100%;
-  background: rgba(45,212,191,.1);
+  background: rgba(45, 212, 191, .1);
 }
 
 .cta:hover svg {
@@ -214,5 +174,4 @@ a {
 .cta:active {
   transform: scale(0.96);
 }
-
 </style>
