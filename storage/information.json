@@ -1,7 +1,7 @@
 {
     "bio": {
         "name": "Kaike Ping",
-        "pfp": "/images/avatar.png",
+        "pfp": "/pkk/images/avatar.png",
         "title": [
             "PhD Candidate",
             "Computer Science",
@@ -132,31 +132,31 @@
             "title": "Epidemiologic Characteristics of COVID-19 in Guizhou Province, China",
             "venue": "The Journal of Infection in Developing Countries",
             "authors": "Kaike Ping, Mingyu Lei, Yun Gou, Zhongfa Tao, Guanghai Yao, Can Hu, Qin Tao, Zhiting Zou, Dingming Wang, Shijun Li, and Yan Huang",
-            "pic": "/images/pub/mscanojidc-015-0389.jpg"
+            "pic": "/pkk/images/pub/mscanojidc-015-0389.jpg"
         },
         {
             "title": "A New Preprocedure Risk Score for Predicting Contrast-Induced Acute Kidney Injury",
             "venue": "Canadian Journal of Cardiology",
             "authors": "Chongyang Duan, Yingshu Cao, Yong Liu, Lizhi Zhou, Kaike Ping, Ming T. Tan, Ning Tan, Jiyan Chen, and Pingyan Chen",
-            "pic": "/images/pub/S0828282X17300302.jpg"
+            "pic": "/pkk/images/pub/S0828282X17300302.jpg"
         },
         {
             "title": "Initial Clinical Characteristics of 146 Patients with COVID-19 Reported in Guizhou Province, China: A Survival Analysis",
             "venue": "The Journal of Infection in Developing Countries",
             "authors": "Yun Gou, Ping, Kaike, Mingyu Lei, Chun Yu, Ying Tao, Can Hu, Zhongfa Tao, Zhiting Zou, Weijia Jiang, Shijun Li, Li Zhuang, Zhaobin Liu, and Yan Huang",
-            "pic": "/images/pub/mscanojidc-016-0032.jpg"
+            "pic": "/pkk/images/pub/mscanojidc-016-0032.jpg"
         },
         {
             "title": "Crowdsourcing assessment of maternal blood multi-omics for predicting gestational age and preterm birth",
             "venue": "Cell Reports Medicine",
             "authors": "Adi L. Tarca, Bálint Ármin Pataki, Roberto Romero, The DREAM Preterm Birth Prediction Challenge Consortium (including Kaike Ping), etc.",
-            "pic": "/images/pub/PIIS266637912100166X.jpg"
+            "pic": "/pkk/images/pub/PIIS266637912100166X.jpg"
         },
         {
             "title": "Cervical Rotatory Manipulation Decreases Uniaxial Tensile Properties of Rabbit Atherosclerotic Internal Carotid Artery",
             "venue": "Evidence-Based Complementary and Alternative Medicine",
             "authors": "Shaoqun Zhang, Ji Qi, Lei Zhang, Chao Chen, Shubhro Mondal, Kaike Ping, Yili Chen, and Yikai Li",
-            "pic": "/images/pub/5189356.fig.004a.png"
+            "pic": "/pkk/images/pub/5189356.fig.004a.png"
         }
     ]
 }

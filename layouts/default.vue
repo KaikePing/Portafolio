@@ -52,6 +52,6 @@ useHead({
       <Navbar />
       <slot />
     </div>
-    <CookieBar />
+    <!-- <CookieBar /> -->
   </main>
 </template>

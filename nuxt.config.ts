@@ -6,6 +6,9 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@intlify/nuxt3',
   ],
+  app: {
+    baseURL: '/pkk/'
+  },
   experimental: {
     reactivityTransform: true,
     viteNode: false,

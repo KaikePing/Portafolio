@@ -1413,7 +1413,11 @@ textarea.contact::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+@media (min-width: 200px) {
+
+  body {
+    min-width: 425px;
+  }
 
   main {
     margin-top: 75px;
