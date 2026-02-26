@@ -2,7 +2,9 @@
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front rounded-xl">
-        <img class="repository-img border-none rounded-t-xl" :src="repositoryImageSrc" :alt="repository.name">
+        <div class="repository-img-wrapper rounded-t-xl">
+          <img class="repository-img border-none" :src="repositoryImageSrc" :alt="repository.name">
+        </div>
         <div class="text-center px-4">
           <a :href="repository.html_url" target="_blank" class="repository-name">{{ repository.name }}</a>
         </div>
@@ -21,13 +23,17 @@
           </div>
         </div>
         <div class="links-section">
-          <div class="link-item">
+          <div class="link-item" v-if="repository.homepage">
             <ion-icon name="log-out-outline" class="link-icon"></ion-icon>
             <a :href="repository.homepage" target="_blank">{{repository.homepage}}</a>
           </div>
-          <div class="link-item">
+          <div class="link-item" v-if="repository.html_url">
             <ion-icon name="logo-github" class="link-icon"></ion-icon>
             <a :href="repository.html_url" target="_blank">{{repository.html_url}}</a>
+          </div>
+          <div class="link-item" v-if="repository.paper_url">
+            <ion-icon name="document-text-outline" class="link-icon"></ion-icon>
+            <a :href="repository.paper_url" target="_blank">Published Paper</a>
           </div>
         </div>
       </div>
@@ -55,24 +61,22 @@ export default {
       repositoryImageSrc: "/images/projects/generic.png",
     };
   },
-  created() {
+  mounted() {
     this.loadRepositoryImage();
   },
   methods: {
     loadRepositoryImage() {
       const repositoryName = this.repository.name;
-      const repositoryImageURL = `/images/projects/${repositoryName}.jpg`;
-
-      const img = new Image();
-      img.src = repositoryImageURL;
-
-      img.onload = () => {
-        this.repositoryImageSrc = repositoryImageURL;
+      const extensions = ['jpg', 'png', 'webp'];
+      const tryNext = (index) => {
+        if (index >= extensions.length) return;
+        const url = `/images/projects/${repositoryName}.${extensions[index]}`;
+        const img = new Image();
+        img.src = url;
+        img.onload = () => { this.repositoryImageSrc = url; };
+        img.onerror = () => tryNext(index + 1);
       };
-
-      img.onerror = () => {
-        console.log("Error loading image:", img.src);
-      };
+      tryNext(0);
     },
     getLanguageIconName(language) {
       const languageIcons = {

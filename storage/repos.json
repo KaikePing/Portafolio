@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "name": "BioDolphin",
+    "description": "Biological Database of Lipid-Protein Highly Inclusive Interactions.",
+    "html_url": "",
+    "homepage": "https://biodolphin.chemistry.gatech.edu/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "topLanguages": ["JavaScript", "Vue", "Typescript", "SCSS", "PHP"],
+    "paper_url": "https://www.nature.com/articles/s42004-024-01384-z"
+  }
+]

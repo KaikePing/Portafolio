@@ -30,69 +30,37 @@ useHead({
 </template>
 
 <script>
-import axios from "axios";
 import GithubReposItem from "./GithubRepo2.vue";
+import reposData from "~/storage/repos.json";
+
+const LANGUAGE_COLORS = {
+  Python: { color: '#3572A5' },
+  JavaScript: { color: '#f1e05a' },
+  TypeScript: { color: '#3178c6' },
+  HTML: { color: '#e34c26' },
+  CSS: { color: '#563d7c' },
+  Vue: { color: '#41b883' },
+  Shell: { color: '#89e051' },
+  R: { color: '#198CE7' },
+  Java: { color: '#b07219' },
+  'C++': { color: '#f34b7d' },
+  C: { color: '#555555' },
+  Go: { color: '#00ADD8' },
+  Rust: { color: '#dea584' },
+  Ruby: { color: '#701516' },
+  PHP: { color: '#4F5D95' },
+  Swift: { color: '#F05138' },
+  Kotlin: { color: '#A97BFF' },
+  Dockerfile: { color: '#384d54' },
+};
 
 export default {
   name: "GithubRepos",
   data() {
     return {
-      repos: [],
-      colors: {}
+      repos: reposData,
+      colors: LANGUAGE_COLORS
     };
-  },
-  methods: {
-    getColors() {
-      axios
-        .get(
-        "https://raw.githubusercontent.com/ozh/github-colors/master/colors.json"
-        )
-        .then(res => (this.colors = res.data));
-    },
-    getLanguagesColors(languages) {
-      const colors = [];
-      for (const language of languages) {
-        if (this.colors[language]) {
-          colors.push(this.colors[language].color);
-        } else {
-          colors.push('#ffffff'); // Color predeterminado si no se encuentra el color del lenguaje
-        }
-      }
-      return colors;
-    },
-    async getRepos() {
-      try {
-        const reposResponse = await axios.get("https://api.github.com/users/DavisuaCoder/repos");
-        const repos = reposResponse.data
-          .filter(repo => !repo.all)
-          .sort((repo1, repo2) => repo2.stargazers_count - repo1.stargazers_count)
-          .slice(0, 8);
-
-        // Obtener los datos de lenguajes para cada repositorio
-        const languagePromises = repos.map(repo => axios.get(repo.languages_url));
-        const languageResponses = await Promise.all(languagePromises);
-        const languageDataList = languageResponses.map(res => res.data);
-
-        // Ordenar los datos de lenguajes para cada repositorio (los tres más utilizados primero)
-        languageDataList.forEach((languageData, index) => {
-          const sortedLanguages = Object.keys(languageData).sort(
-            (a, b) => languageData[b] - languageData[a]
-          );
-          const topLanguages = sortedLanguages.slice(0, 3);
-          repos[index].topLanguages = topLanguages;
-        });
-
-        this.repos = repos;
-        console.log(this.colors);
-
-      } catch (error) {
-        console.error("Error al obtener los repositorios:", error);
-      }
-   }
-  },
-  async mounted() {
-    await this.getColors();
-    this.getRepos();
   },
   components: {
     GithubReposItem

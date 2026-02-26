@@ -70,6 +70,7 @@
       </section>
     </article>
     <resume />
+    <Github />
     <publications />
   </div>
 </template>
