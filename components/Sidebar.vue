@@ -89,6 +89,17 @@ onMounted(() => {
             <span class="contact-link">{{info.bio.github}}</span>
           </div>
         </a>
+
+        <!-- Google Scholar -->
+        <a :href="info.bio.scholar" class="contact-item" target="_blank">
+          <div class="icon-box">
+            <ion-icon name="school-outline" />
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Google Scholar</p>
+            <span class="contact-link">{{info.bio.name}}</span>
+          </div>
+        </a>
       </ul>
 
       <div v-if="false">

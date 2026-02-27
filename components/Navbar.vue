@@ -12,6 +12,11 @@
         </a>
       </li>
       <li class="navbar-item">
+        <a href="#github" class="navbar-link" :class="{ 'active': activeSection === 'github' }">
+          {{ $t('pageTitles.projects') }}
+        </a>
+      </li>
+      <li class="navbar-item">
         <a href="#publication" class="navbar-link" :class="{ 'active': activeSection === 'publication' }">
           Publications
         </a>
@@ -30,28 +35,34 @@ const handleScroll = () => {
   // Verificar la posición del scroll en relación con cada sección de la página
   const aboutSection = document.getElementById('about');
   const resumeSection = document.getElementById('resume');
-  const githubSection = document.getElementById('publication');
+  const githubSection = document.getElementById('github');
+  const publicationSection = document.getElementById('publication');
 
   const scrollY = window.scrollY;
   const scrollTop = window.scrollY;
-  const headerHeight = 200; // Altura de la cabecera (ajusta según tu diseño)
+  const headerHeight = 200;
 
   if (scrollTop < headerHeight) {
     activeSection.value = 'about';
   }
 
   if (
-    scrollY >= aboutSection.offsetTop && 
+    scrollY >= aboutSection.offsetTop &&
     scrollY < resumeSection.offsetTop
   ) {
     activeSection.value = 'about';
   } else if (
-    scrollY >= resumeSection.offsetTop && 
+    scrollY >= resumeSection.offsetTop &&
     scrollY < githubSection.offsetTop
   ) {
     activeSection.value = 'resume';
   } else if (
-    scrollY >= resumeSection.offsetTop
+    scrollY >= githubSection.offsetTop &&
+    scrollY < publicationSection.offsetTop
+  ) {
+    activeSection.value = 'github';
+  } else if (
+    scrollY >= publicationSection.offsetTop
   ) {
     activeSection.value = 'publication';
   }

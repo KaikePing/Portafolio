@@ -9,7 +9,8 @@
         ],
         "email": "pkk@vt.edu",
         "linkedin": "https://www.linkedin.com/in/kaike-ping/",
-        "github": "https://github.com/kaikeping"
+        "github": "https://github.com/kaikeping",
+        "scholar": "https://scholar.google.com/citations?user=Pcj0F-UAAAAJ&hl=en"
     },
     "about": {
         "content": "I am a PhD candidate in *Computer Science* at *Virginia Tech* since August 2022, advised by Prof. Eugenia Rho. I received my Master's degree in *Biostatistics* from Southern Medical University in Guangzhou, China in 2017, advised by Prof. Pingyan Chen. I am broadly interested in *natural language processing (NLP)* and *computational social science*, with a focus on *human-computer interaction (HCI)* in developing and evaluating an interactive AI system to assist people. I have also conducted research on epidemiology and public health, including pandemic surveillance, risk assessment, transmission modeling, and field investigations.",
@@ -129,10 +130,46 @@
     ],
     "publication": [
         {
+            "title": "Perceiving and countering hate: The role of identity in online responses",
+            "venue": "CSCW '25",
+            "authors": "Kaike Ping, James Hawdon, Eugenia H Rho",
+            "pic": "/pkk/images/pub/chatgpt_vs_difficulty_ver2.1.png"
+        },
+        {
+            "title": "Behind the Counter: Exploring Motivations and Barriers of Online Counterspeech Writing",
+            "venue": "ACM Transactions on Computer-Human Interaction",
+            "authors": "Kaike Ping, Anisha Kumar, Xiaohan Ding, Eugenia H Rho",
+            "pic": "/pkk/images/pub/CROSS1Flowchart.png"
+        },
+        {
             "title": "Epidemiologic Characteristics of COVID-19 in Guizhou Province, China",
             "venue": "The Journal of Infection in Developing Countries",
             "authors": "Kaike Ping, Mingyu Lei, Yun Gou, Zhongfa Tao, Guanghai Yao, Can Hu, Qin Tao, Zhiting Zou, Dingming Wang, Shijun Li, and Yan Huang",
             "pic": "/pkk/images/pub/mscanojidc-015-0389.jpg"
+        },
+        {
+            "title": "A multi-level benchmark for causal language understanding in social media discourse",
+            "venue": "EMNLP '25",
+            "authors": "Xiaohan Ding, Kaike Ping, Buse Çarık, Eugenia Rho",
+            "pic": "/pkk/images/pub/ScreenShot_2026-02-26_193710_425.png"
+        },
+        {
+            "title": "Designing Human-AI Collaboration to Support Learning in Counterspeech Writing",
+            "venue": "2025 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
+            "authors": "Xiaohan Ding, Kaike Ping, Uma Sushmitha Gunturi, Buse Carik, Sophia Stil, Lance T Wilhelm, Taufiq Daryanto, James Hawdon, Sang Won Lee, Eugenia H Rho",
+            "pic": "/pkk/images/pub/ScreenShot_2026-02-26_193827_966.png"
+        },
+        {
+            "title": "Exploring large language models through a neurodivergent lens: use, challenges, community-driven workarounds, and concerns",
+            "venue": "Proceedings of the ACM on Human-Computer Interaction",
+            "authors": "Buse Carik, Kaike Ping, Xiaohan Ding, Eugenia H Rho",
+            "pic": "/pkk/images/pub/Neurodivergent.png"
+        },
+        {
+            "title": "BioDolphin as a comprehensive database of lipid–protein binding interactions",
+            "venue": "Communications Chemistry",
+            "authors": "Li-Yen Yang, Kaike Ping, Yunan Luo, Andrew C McShan",
+            "pic": "/pkk/images/pub/ScreenShot_2026-02-26_194303_341.png"
         },
         {
             "title": "A New Preprocedure Risk Score for Predicting Contrast-Induced Acute Kidney Injury",
@@ -143,13 +180,13 @@
         {
             "title": "Initial Clinical Characteristics of 146 Patients with COVID-19 Reported in Guizhou Province, China: A Survival Analysis",
             "venue": "The Journal of Infection in Developing Countries",
-            "authors": "Yun Gou, Ping, Kaike, Mingyu Lei, Chun Yu, Ying Tao, Can Hu, Zhongfa Tao, Zhiting Zou, Weijia Jiang, Shijun Li, Li Zhuang, Zhaobin Liu, and Yan Huang",
+            "authors": "Yun Gou, Kaike Ping, Mingyu Lei, Chun Yu, Ying Tao, Can Hu, Zhongfa Tao, Zhiting Zou, Weijia Jiang, Shijun Li, Li Zhuang, Zhaobin Liu, and Yan Huang",
             "pic": "/pkk/images/pub/mscanojidc-016-0032.jpg"
         },
         {
             "title": "Crowdsourcing assessment of maternal blood multi-omics for predicting gestational age and preterm birth",
             "venue": "Cell Reports Medicine",
-            "authors": "Adi L. Tarca, Bálint Ármin Pataki, Roberto Romero, The DREAM Preterm Birth Prediction Challenge Consortium (including Kaike Ping), etc.",
+            "authors": "Adi L. Tarca, Bálint Ármin Pataki, Roberto Romero, The DREAM Preterm Birth Prediction Challenge Consortium (including Kaike Ping), et al.",
             "pic": "/pkk/images/pub/PIIS266637912100166X.jpg"
         },
         {

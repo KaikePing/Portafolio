@@ -27,7 +27,7 @@
                         </div>
                         <div class="mr-grid actors-row">
                             <div class="col1">
-                                <p class="movie-actors">{{ paper.authors }}</p>
+                                <p class="movie-actors" v-html="highlightAuthors(paper.authors)"></p>
                             </div>
                         </div>
                         <div class="mr-grid">
@@ -45,4 +45,25 @@
 </template>
 
 <script setup>
+const highlightAuthors = (authors) => {
+  return authors.replace(/kaike ping/gi, '<span class="author-highlight">$&</span>');
+};
 </script>
+
+<style scoped>
+:deep(.author-highlight) {
+  display: inline;
+  background: linear-gradient(90deg, #64ffda, #b2fff0, #64ffda);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  animation: name-shine 3s linear infinite;
+}
+
+@keyframes name-shine {
+  from { background-position: 0% center; }
+  to   { background-position: 200% center; }
+}
+</style>
