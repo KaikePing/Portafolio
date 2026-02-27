@@ -58,19 +58,22 @@ export default {
   },
   data() {
     return {
-      repositoryImageSrc: "/images/projects/generic.png",
+      repositoryImageSrc: null,
     };
   },
   mounted() {
+    const baseURL = useRuntimeConfig().app.baseURL;
+    this.repositoryImageSrc = `${baseURL}images/projects/generic.png`;
     this.loadRepositoryImage();
   },
   methods: {
     loadRepositoryImage() {
+      const baseURL = useRuntimeConfig().app.baseURL;
       const repositoryName = this.repository.name;
       const extensions = ['jpg', 'png', 'webp'];
       const tryNext = (index) => {
         if (index >= extensions.length) return;
-        const url = `/images/projects/${repositoryName}.${extensions[index]}`;
+        const url = `${baseURL}images/projects/${repositoryName}.${extensions[index]}`;
         const img = new Image();
         img.src = url;
         img.onload = () => { this.repositoryImageSrc = url; };

@@ -784,17 +784,19 @@ justify-content: space-between;
 }
 
 .timeline-item-content-body {
-  margin-top: 1rem; /* Espacio entre el contenido y la descripción */
+  margin-top: 0.5rem; /* Espacio entre el contenido y la descripción */
 }
 
 .timeline-description-li {
   list-style-type: circle;
-  list-style-position: inside;
+  list-style-position: outside;
+  margin-left: 1.2em;
   color: var(--color-text-light);
 }
 
 .timeline-description-li .highlight {
-  color: var(--color-text-light)
+  display: inline;
+  color: var(--color-text-light);
 }
 
 .timeline-description {

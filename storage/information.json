@@ -59,23 +59,31 @@
     },
     "experience": [
         {
+            "title": "PhD Candidate",
+            "date": "Aug 2022 ➔ Present",
+            "company": "Virginia Tech",
+            "description": [
+                "*Statistical Modeling (R)*: Led large-scale quantitative research on online user behavior, surveying 1,100+ participants and employing advanced statistical modeling in R (e.g., Structural Equation Modeling, Mixed-Effects Models) to analyze motivations and barriers related to social media counterspeech",
+                "*Small-Sample NLP Evaluation*: Developed high-performance NLP models under limited data conditions, achieving ~87% predictive accuracy for counterspeech efficacy. This involved engineering and evaluating transformer-based models (e.g., RoBERTa) against state-of-the-art LLMs (GPT, Claude, Gemini) on a specialized dataset of 600+ curated text samples",
+                "*Research Publication Impact*: Published key findings from this research in premier Human-Computer Interaction (HCI) academic venues, including ACM ToCHI (journal) and CSCW (conference)"
+            ],
+            "technologies": [
+                "R", "Python", "NLP", "HuggingFace", "Statistical Modeling", "HCI Research"
+            ],
+            "icon": "school-outline"
+        },
+        {
             "title": "Assistant Research Fellow",
             "date": "Nov 2019 ➔ Jul 2022",
             "company": "Guizhou Center for Disease Control and Prevention",
             "description": [
-                "*Epidemic Surveillance*: Collected and analyzed weekly epidemic surveillance data on COVID-19, unexplained pneumonia, and avian influenza for over 3.8 million people to monitor their intensity, detect transmission changes, and measure their impacts on hospitalizations and deaths",
-                "*Pandemic Risk Assessment*: Assessed the risks of possible pandemic outbreaks using data-driven models and scenarios and determined the appropriate public health response level and steps for different regions and populations",
-                "*Field Epidemiology*: Conducted field epidemiological investigations on over 100 cases of COVID-19, flu, avian influenza, and chickenpox to trace and test over 1000 contacts and control transmissions",
-                "*Epidemic Modeling*: Analyzed epidemiologic characteristics of various epidemics using statistical or computer simulation models to unravel transmission dynamics and evaluate intervention strategies",
-                "*Health Education*: Hosted over 5 health education and assessment workshops and activities on COVID-19 prevention for various groups and settings"
+                "*Early COVID-19 Research*: Pioneered early-phase COVID-19 epidemiological analysis, being among the first global researchers to estimate its incubation period using Accelerated Failure Time models and the effective reproduction number via the Wallinga & Teunis method",
+                "*Workflow Engineering & Automation*: Engineered an automated R and SQL workflow for ingesting, cleaning, and transforming weekly surveillance data (3.8M pop.), culminating in the automated generation of epidemiological summaries with key public health metrics",
+                "*Text Data Processing*: Enhanced data extraction capabilities by fine-tuning a compact NLP model (bert-small) to parse and quantify information from textual epidemiological reports, standardizing inputs for an Excel-based centralized data repository",
+                "*Pandemic Risk Assessment*: Developed and validated an Autoregressive Distributed Lag (ARDL) model in R, leveraging 177 weeks of internet search trend data (correlating with 173K pediatric HFMD cases) to forecast incidence rates, integrated into the provincial early warning system"
             ],
             "technologies": [
-                "Data collection",
-                "Data Analysis",
-                "Modeling",
-                "Simulation",
-                "Visualization",
-                "Decision Making"
+                "R", "SQL", "Epidemiological Modeling", "NLP", "Survival Analysis", "Public Health"
             ],
             "icon": "earth-outline"
         },
@@ -84,14 +92,12 @@
             "date": "Jul 2017 ➔ Jun 2019",
             "company": "Contract Research Organization of CLT Inc",
             "description": [
-                "*Web Development*: Served as the chief programmer for the Central Randomization System and Electronic Data Capture System using web development technologies such as HTML, CSS, JavaScript, PHP, and MySQL",
-                "*Central Randomization System*: Developed the Central Randomization System, a web-based application used in over 20 multi-center clinical trials, to implement drug management, user management, and algorithms for allocation concealment",
-                "*Electronic Data Capture System*: Created the Electronic Data Capture System, a web-based SaaS that stored patient data collected in clinical trials, to increase real-time access to data and decrease time spent on query management"
+                "*System Design & Development*: Led design and development as chief programmer for core clinical trial systems (Central Randomization & EDC), defining database architecture (MySQL), data validation rules, and system functionalities using PHP, JavaScript, HTML/CSS",
+                "*Central Randomization System*: Engineered a web-based Central Randomization System deployed in 20+ multi-center clinical trials, featuring allocation concealment algorithms tailored to trial-specific statistical needs and enabling automated data export to SAS datasets",
+                "*Electronic Data Capture System*: Developed a scalable Electronic Data Capture (EDC) SaaS platform managing clinical trial data for 100K+ patients, significantly improving real-time data access and data management efficiency for research teams"
             ],
             "technologies": [
-                "Web Development",
-                "Software Testing",
-                "Database Management"
+                "PHP", "JavaScript", "MySQL", "HTML", "CSS", "SaaS"
             ],
             "icon": "business-outline"
         },
@@ -100,13 +106,10 @@
             "date": "Nov 2015 ➔ Feb 2017",
             "company": "National Clinical Research Center for Kidney Disease",
             "description": [
-                "*Cohort Study Development*: Deployed a web-based application for a cohort study of chronic kidney disease patients",
-                "*Case Report Form Design*: Participated in the design of case report forms for data collection and management for the cohort study"
+                "*CRF Design & Data Standardization*: Contributed to a large-scale chronic kidney disease cohort study by co-designing Case Report Forms (CRFs), focusing on rigorous data standardization (defining variable formats, units, and ranges) to ensure high-quality data collection for subsequent statistical analysis"
             ],
             "technologies": [
-                "Cohort Study",
-                "Study Design",
-                "Statistics Analysis"
+                "Cohort Study", "Study Design", "Biostatistics", "Data Standardization"
             ],
             "icon": "medkit-outline"
         }
